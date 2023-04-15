@@ -2,22 +2,8 @@ baseurl = "/"
 languageCode = "en-us"
 theme = "hugo-theme-hello-friend"
 paginate = 5
-disqusShortname = "alexdelli"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-    unsafe = true
-	
-[permalinks]
-  posts = "/:title/"
-  page = "/:title/"
 
 [params]
-  # If you want to display posts on the homepage, the options are
-  # "popular" (order posts by weight), "recent" (order posts by date)
-  # or "" (do not display, default option)
-  showPostsOnHomePage = "recent"
   # dir name of your blog content (default is `content/posts`)
   contentTypeName = "post"
   # "light" or "dark"
@@ -26,15 +12,13 @@ disqusShortname = "alexdelli"
   showMenuItems = 2
   # Enable to show reading time in minutes for posts
   showReadingTime = false
-  # Google Analytics 4
-  googleAnalyticsID = "G-F9Z7QR5XHZ"
 
 [languages]
   [languages.en]
-    title = "Alexdelli"
-    subtitle = ""
+    title = "Hello Friend"
+    subtitle = "A simple theme for Hugo"
     keywords = ""
-    copyright = "Copyright © 2012 - 2021 Alexdelli"
+    copyright = ""
     menuMore = "Show more"
     writtenBy = "Written by"
     readMore = "Read more"
@@ -42,30 +26,23 @@ disqusShortname = "alexdelli"
     newerPosts = "Newer posts"
     olderPosts = "Older posts"
     minuteReadingTime = "min read"
-    dateFormatSingle = "02-01-2006"
-    dateFormatList = "02-01-2006"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
 
     [languages.en.params.logo]
-      logoText = "Alexdelli"
+      logoText = "hello friend"
       logoHomeLink = "/"
     # or
     #
-    # path = "/img/trasp-Alexdelli-Logo-2.png"
-    # alt = "Alexdelli_Logo"
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
 
     [languages.en.menu]
-         
       [[languages.en.menu.main]]
-        identifier = "contact"
-        name = "Contact"
-        url = "/contact"
+        identifier = "about"
+        name = "About"
+        url = "/about"
       [[languages.en.menu.main]]
         identifier = "showcase"
         name = "Showcase"
         url = "/showcase"
-		
-
-[sitemap]
-  changefreq = "monthly"
-  filename = "sitemap.xml"
-  priority = 0.5
